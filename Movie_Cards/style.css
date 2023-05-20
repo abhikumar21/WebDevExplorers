@@ -1,0 +1,173 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card{
+    position: relative;
+    height: 450px;
+    width: 320px;
+   overflow: hidden;
+   margin-top: 50px;
+   border-radius: 20px;
+   background-color: bisque;
+   /* box-shadow:  8px 8px 27px #254954,
+   -8px -8px 27px #3f7b8e; */
+    
+   box-shadow:  10px 10px 8px #cfcfcf,
+   -10px -10px 8px #ffffff;
+   
+}
+
+.card .info{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card .info::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(0deg, rgba(45,87,126,1) 0%, rgba(51,159,159,1) 50%, transparent ); */
+    /* background: linear-gradient(0deg, rgb(221, 98, 46) 0%, rgb(249, 21, 24) 50%, transparent ); */
+
+    transition: 0.5s;
+    z-index: 1;
+    bottom: -180px;
+
+}
+
+.card:nth-child(1) .info:before{
+    background: linear-gradient(0deg, rgba(45,87,126,1) 0%, rgba(51,159,159,1) 50%, transparent );
+
+}
+.card:nth-child(2) .info:before{
+    background: linear-gradient(0deg, rgb(60, 96, 240) 0%, rgb(101, 33, 247) 50%, transparent );
+
+}
+
+
+.card:hover .info::before {
+    bottom: 0px;
+}
+
+.card .info img{
+    height: 450px;
+    width: auto;
+    transition: 0.5s;
+}
+
+.card:hover .info img{
+    transform: translateY(-30px);
+    filter: blur(5px);
+}
+
+
+.card .desc{
+    position: absolute;
+    width: 320px;
+    /* background-color: aquamarine; */
+    /* bottom of desc is a 0  */
+    bottom: -135px; 
+    z-index: 2;
+    padding: 20px;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+.card:hover .desc{
+    bottom: -5px;
+}
+
+.card .desc .logo{
+    position: relative;
+    bottom: -30px;
+    width: 70%;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.rating ion-icon{
+    color: rgb(218, 243, 29);
+    font-size: 1.4em;
+    padding-right: 2px;
+}
+
+.rating span{
+    margin-left: 8px;
+    font-size: 1em;
+    font-weight: 550;
+
+}
+
+.type{
+    font-weight: 800;
+}
+.type span:nth-child(1){
+    color: rgb(26, 12, 61);
+    margin-right: 5px;
+}
+.type span:nth-child(2){
+    color: crimson;
+}
+
+.desc button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.cast{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 60px;
+    /* overflow: hidden; */
+
+}
+
+
+
+.card .cast .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid 2px rgb(4, 33, 24);
+    overflow: hidden;
+}
+
+.card .cast img{
+    width: 100%;
+    padding-right: 2px;
+
+    
+}
+
