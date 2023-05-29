@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(30deg, rgb(211, 230, 63), rgb(57, 57, 248));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.image:hover{
+    width: 300px;
+    cursor: pointer;
+
+}
+
+.image:nth-child(1) {
+    background-image: url("images/p13.jpeg");
+}
+.image:nth-child(2) {
+    background-image: url("images/p1.jpeg");
+}
+.image:nth-child(3) {
+    background-image: url("images/p4.jpeg");
+}
+.image:nth-child(4) {
+    background-image: url("images/p6.jpeg");
+}
+.image:nth-child(5) {
+    background-image: url("images/p5.jpeg");
+}
+
+
+ /* .image::before  */
+.image:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(0deg, black 50%, transparent 50%); */
+    background: linear-gradient(0deg, black 0%, black 10%, transparent );
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+    
+}
+
+.image .about{
+    color: aliceblue;
+    position: absolute;
+    align-items: end;
+    width: 300px;
+    height: 38%;
+    padding: 0 35px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+.image:hover .about{
+    transform: translateX(0);
+    /* transition-delay: 0.1s; */
+    opacity: 1;
+}
+
+
+.about .name{
+    font-size: 30px;
+    line-height: 25px;
+    color: rgb(230, 249, 108);
+    margin: 10px 0;
+    
+}
+
+.about .mo{
+    color: rgb(195, 163, 217);
+    margin-bottom: 4px;
+}
+
+.about .movies{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.about .button{
+    font-size: 25px;
+}
+
+.about .button ion-icon{
+    padding: 0 5px;
+}
+
+.about .button ion-icon:nth-child(1){
+   color: rgb(178, 28, 175);
+}
+
+.about .button ion-icon:nth-child(2){
+    color: rgb(7, 44, 146);
+ }
+
+ .about .button ion-icon:nth-child(3){
+    color: rgb(28, 145, 178);
+ }
+
+ .about .button ion-icon:nth-child(4){
+    color: rgb(41, 60, 229);
+ }
+
