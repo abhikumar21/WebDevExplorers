@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.container{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.container .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.container .image span{
+    width: 150px; 
+    /* image_width/4 */
+    height: 100%;
+    transition: 1s;
+}
+
+.container .image1 span{
+    background: url("bg1.jpg");
+    transform-origin: top;
+    background-size: cover;
+}
+
+.container:hover .image1 span{
+    transform: rotateX(90deg) translateY(-50%);
+}
+
+.container .image2 span{
+    background: url("bg2.jpg");
+    background-size: cover;
+    transform-origin: bottom;
+    transform: rotateX(90deg) translateY(50%);
+}
+
+.container:hover .image2 span{
+    transform: rotateX(0deg) translateY(0);
+}
+
+.container .image span{
+    background-position-x: calc(-150px * var(--i));
+    transition-delay: calc(0.2s * var(--i));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
