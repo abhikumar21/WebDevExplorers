@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(40deg, #37daae, #8127d0 50%);
+    color: #000000;
+    position: relative;
+}
+
+.container{
+    width: 700px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.clock{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container::before{
+    content: '';
+    background: rgba(255, 19, 19);
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 50px;
+    left: 80px;
+    border-radius: 75% 39% 58% 52% / 60% 62% 50% 40%;
+    z-index: -1;
+}
+
+.container::after{
+    content: '';
+    background: rgba(109, 255, 76);
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 0px;
+    right: 70px;
+    border-radius: 53% 47% 39% 61% / 52% 34% 66% 48%;
+    z-index: -1;
+}
+
+.clock span{
+    font-size: 80px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span:nth-child(1):after{
+    content: 'Hours';
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    bottom: 10px;
+    justify-content: center;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.clock span:nth-child(3):after{
+    content: 'Minutes';
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    bottom: 10px;
+    justify-content: center;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.clock span:nth-child(5):after{
+    content: 'Seconds';
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    bottom: 10px;
+    justify-content: center;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+
