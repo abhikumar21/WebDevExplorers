@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(30deg, #5D85FA, #AF59FF);
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.sidebar{
+    height: 100%;
+    width: 60px;
+    background: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.mainHead{
+    margin-left: 15px;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #000000CC;
+    margin-left: 0px;
+    padding: 10px 0px;
+}
+
+.sidebar li{
+    margin-left: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.items i{
+    margin: 0 10px;
+}
+
+.para{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.sidebar li:not(.logout-btn):hover {
+    background: #000;
+    color: aliceblue;
+}
+
+.logout-btn{
+    margin-top: 50px;
+    color: #B70202;
+}
+
+.logout-btn:hover{
+    background-color: #B70202;
+    color: aliceblue;
+}
+
+.toggler{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    transition: all 0.5s ease;
+}
+
+.toggler #toggle-cross {
+    display: none;
+}
+
+
+
+.active.toggler #toggle-cross {
+    display: block;
+}
+
+.active.toggler #toggle-bars {
+    display: none;
+}
+
+.active.toggler {
+    left: 170px;
+}
+
+.active.sidebar {
+    width: 220px;
+}
+
+.active.sidebar .para{
+    opacity: 1;
+}
+
+
+
+
+
+
