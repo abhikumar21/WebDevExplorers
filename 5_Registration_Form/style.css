@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(45deg, #5dbfd3, #7cc48a);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.container .title{
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container form .form-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 15px 0;
+}
+
+form .form-container .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+form .form-container .full-info{
+    width: 100%;
+}
+
+.form-container .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-container .input-box input,select{
+    color: #5b5b5b;
+     height: 45px;
+     width: 100%;
+     outline: none;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     padding: 0 15px;
+     font-size: 16px;
+     border-bottom-width: 2px;
+     transition: all 0.3s ease;
+}
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gender-box{
+    margin: 5px 0;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.category span{
+    margin-right: 20px;
+}
+
+.checkBox{
+    color: #7f7f7f;
+    display: flex;
+}
+.checkBox input{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+form button{
+    background: #1d8bcb;
+    color: #fff;
+    border: none;
+    margin: 10px 0;
+    padding: 8px 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 100%;
+    &:hover{
+        background-color: #432ad1;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    form .form-container .input-box{
+        width: 100%;
+    }
+    .container form .form-container{
+        max-height: 380px;
+        overflow-y: scroll;
+    }
+    .container form .form-container::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Register</div>
+        <form action="#">
+            <div class="form-container">
+                <div class="input-box">
+                    <span class="details">Full name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">E-mail</span>
+                    <input type="email" placeholder="Enter your e-mail" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Date of birth</span>
+                    <input type="date" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Nationality</span>
+                    <select name="" id="" class="country">
+                        <option value="">Select a country</option>
+                        <option value="">India</option>
+                        <option value="">Indonesia</option>
+                        <option value="">United States</option>
+                        <option value="">Mexico</option>
+                        <option value="">Vietnam</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="number" placeholder="Enter your number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter password" required>
+                </div>
+                <div class="input-box full-info">
+                    <span class="details">Address</span>
+                    <input type="text" placeholder="Enter your address" required>
+                </div>
+
+                <div class="gender-box full-info">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <span>
+                            <input type="radio" name="gender">
+                            <label for="male">Male</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="gender">
+                            <label for="female">Female</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="gender">
+                            <label for="unspecified">Prefer not to say</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkBox">
+                <input type="checkbox">
+                <span>I hereby declare that I have read all the terms and conditions</span>
+            </div>
+
+            <button>Register</button>
+        </form>
+    </div>
+    
+</body>
+</html>
