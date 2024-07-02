@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #2a2a2a;
+    position: relative;
+    height: 100%;
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper{
+    width: 90%;
+    height: auto;
+}
+
+.swiper-wrapper{
+    height: 100%;
+}
+
+.swiper-slide{
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.swiper-slide .image{
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.swiper-slide img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.data{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.data .brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.brand .price{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6711f1;
+}
+
+p.item-name{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    font-weight: 800;
+}
